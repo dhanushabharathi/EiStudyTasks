@@ -1,32 +1,22 @@
-# Design Patterns Examples (Java)
+# Design Patterns Demo (Java)
 
-This project contains six small Java use-cases demonstrating design patterns:
+## Project Overview
+A console-based Java application demonstrating **6 software design patterns** to understand **Behavioral, Creational, and Structural** patterns through simple use cases.
 
-Behavioral:
-1. Observer (com.examples.behavioral.observer)
-2. Strategy (com.examples.behavioral.strategy)
+## Features
+- Demonstrates **Observer** pattern for event notifications (`WeatherStationDemo`)
+- Demonstrates **Strategy** pattern for flexible payment processing (`PaymentDemo`)
+- Demonstrates **Singleton** pattern for single instance management (`LoggerDemo`)
+- Demonstrates **Factory** pattern for dynamic object creation (`ShapeFactoryDemo`)
+- Demonstrates **Adapter** pattern for converting incompatible interfaces (`ChargerAdapterDemo`)
+- Demonstrates **Decorator** pattern for adding functionality dynamically (`CoffeeDecoratorDemo`)
 
-Creational:
-3. Factory Method (com.examples.creational.factory)
-4. Builder (com.examples.creational.builder)
+## Design Patterns Used
+- **Behavioral:** Observer, Strategy  
+- **Creational:** Singleton, Factory  
+- **Structural:** Adapter, Decorator  
 
-Structural:
-5. Adapter (com.examples.structural.adapter)
-6. Decorator (com.examples.structural.decorator)
-
-Each package has a `Main.java` with a short demonstration. To compile and run:
-
-```bash
-# from project root (where README.md is)
-javac -d out $(find src -name "*.java")
-
-# Examples (run one at a time):
-java -cp out com.examples.behavioral.observer.Main
-java -cp out com.examples.behavioral.strategy.Main
-java -cp out com.examples.creational.factory.Main
-java -cp out com.examples.creational.builder.Main
-java -cp out com.examples.structural.adapter.Main
-java -cp out com.examples.structural.decorator.Main
-```
-
-The compiled classes will be placed in the `out` folder.
+## How to Run
+1. Open the project in an IDE (Eclipse, IntelliJ, or VS Code)  
+2. Navigate to `src` and select a demo file (e.g., `WeatherStationDemo.java`)  
+3. Run the main method
